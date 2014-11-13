@@ -1,4 +1,13 @@
+
 This is the thing. Change the url to get a different thing
 <br>
 <br>
-{{dict}}
+<!--{{dict}}-->
+{%for item in dict%}
+<li>{{item}}:{{dict[item][0]['price']}}<li>
+{% endfor %}
+
+
+ 
+    
+
